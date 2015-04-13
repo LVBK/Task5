@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7.5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Prof Reinbold"
+            android:id="@+id/title"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ff00bf3d" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:text="&quot;Day 4 at the yard: Milkshake has melted and is beginning to spoil, still no sign of boys. &quot; — Cal Poly Pomona"
+                android:id="@+id/content"
+                android:layout_weight="0.85"
+                android:textSize="20dp"
+                android:layout_gravity="right"
+                android:textColor="#ff000000" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.15">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/upButton"
+                    android:src="@drawable/up"
+                    android:layout_gravity="top|center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:id="@+id/point"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#ff00ac44"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/downButton"
+                    android:src="@drawable/down"
+                    android:layout_gravity="bottom|center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2 months ago"
+            android:id="@+id/time"
+            android:textColor="#ff11cb00"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
